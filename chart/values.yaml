@@ -35,10 +35,14 @@ awsForFluentBit:
 
 # AWS Load Balancer Controller Values
 awsLoadBalancerController:
-  enable: false
+  enable: true
   serviceAccountName:
   podDisruptionBudget:
     maxUnavailable: 1
+  image:
+    repository: 602401143452.dkr.ecr.ap-southeast-1.amazonaws.com/amazon/aws-load-balancer-controller
+    tag: v2.4.5
+    pullPolicy: IfNotPresent
 
 # AWS Otel Collector Values
 awsOtelCollector:
