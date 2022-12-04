@@ -17,6 +17,10 @@ spec:
         aws-load-balancer-controller:
           clusterName: {{ .Values.clusterName }}
           region: {{ .Values.region }}
+          image:
+            repository: 602401143452.dkr.ecr.us-west-2.amazonaws.com/amazon/aws-load-balancer-controller
+            tag: v2.4.5
+            pullPolicy: IfNotPresent
           serviceAccount:
             name: {{ .Values.awsLoadBalancerController.serviceAccountName }}
             create: false
