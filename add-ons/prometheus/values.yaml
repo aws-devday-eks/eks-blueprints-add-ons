@@ -7,13 +7,9 @@ server:
   global:
     scrape_interval: 15s
   nodeSelector: # <- add nodeselector, toleration and spread constraitns
-    billing-team: team-riker
+    billing-team: default
     type: karpenter
   tolerations:
     - key: 'karpenter'
       operator: 'Exists'
       effect: 'NoSchedule'
-    - key: "billing-team"
-      operator: "Equal"
-      value: "team-riker"
-      effect: "NoSchedule"
