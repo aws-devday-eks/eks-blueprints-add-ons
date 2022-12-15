@@ -14,8 +14,3 @@ prometheus:
       - key: 'karpenter'
         operator: 'Exists'
         effect: 'NoSchedule'
-  prometheus-node-exporter:
-    tolerations:
-      - key: 'karpenter'
-        operator: 'Exists'
-        effect: 'NoSchedule'
