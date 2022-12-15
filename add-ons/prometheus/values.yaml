@@ -15,9 +15,6 @@ prometheus:
         operator: 'Exists'
         effect: 'NoSchedule'
   prometheus-node-exporter:
-    nodeSelector: # <- add nodeselector, toleration and spread constraitns
-      billing-team: default
-      type: karpenter
     tolerations:
       - key: 'karpenter'
         operator: 'Exists'
