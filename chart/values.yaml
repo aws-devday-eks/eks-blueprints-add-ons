@@ -134,10 +134,10 @@ ondat:
 
 # Prometheus Values
 prometheus:
-  enable: false
-  serviceAccountName:
-  roleArn: 
-  ampWorkspaceUrl: 
+  enable: true
+  serviceAccountName: "amp-ingest"
+  roleArn: "arn:aws:iam::535479350247:role/eks-blueprints-amp-ingest-irsa"
+  ampWorkspaceUrl: "https://aps-workspaces.ap-southeast-1.amazonaws.com/workspaces/ws-a7ed3d1c-107d-4264-bc2c-fc3ca546a1dc/api/v1/remote_write"
 
 # Metrics Server Values
 sparkOperator:
