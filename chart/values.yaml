@@ -136,8 +136,8 @@ ondat:
 prometheus:
   enable: false
   serviceAccountName:
-  roleArn:
-  ampWorkspaceUrl:
+  roleArn: 
+  ampWorkspaceUrl: 
 
 # Metrics Server Values
 sparkOperator:
@@ -187,7 +187,18 @@ promtail:
 
 # kubecost Values
 kubecost:
-  enable: false
+  enable: true
+  global:
+    amp:
+      enabled: true
+      prometheusServerEndpoint: http://localhost:8005/workspaces/eks-blueprint-amp
+      remoteWriteService: https://aps-workspaces.ap-southeast-1.amazonaws.com/workspaces/eks-blueprint-amp/api/v1/remote_write
+      sigv4:
+        region: ap-southeast-1
+
+  sigV4Proxy:
+    region: ap-southeast-1
+    host: aps-workspaces.ap-southeast-1.amazonaws.com
 
 # SMB CSI Driver Values
 smbCsiDriver:
