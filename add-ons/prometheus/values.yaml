@@ -1,23 +1,24 @@
-server:
-  retention: 1h
-  resources:
-    requests:
-      cpu: 500m
-      memory: 512Mi
-  global:
-    scrape_interval: 15s
-  nodeSelector: # <- add nodeselector, toleration and spread constraitns
-    billing-team: default
-    type: karpenter
-  tolerations:
-    - key: 'karpenter'
-      operator: 'Exists'
-      effect: 'NoSchedule'
-nodeExporter::
-  nodeSelector: # <- add nodeselector, toleration and spread constraitns
-    billing-team: default
-    type: karpenter
-  tolerations:
-    - key: 'karpenter'
-      operator: 'Exists'
-      effect: 'NoSchedule'
+prometheus:
+  server:
+    retention: 1h
+    resources:
+      requests:
+        cpu: 500m
+        memory: 512Mi
+    global:
+      scrape_interval: 15s
+    nodeSelector: # <- add nodeselector, toleration and spread constraitns
+      billing-team: default
+      type: karpenter
+    tolerations:
+      - key: 'karpenter'
+        operator: 'Exists'
+        effect: 'NoSchedule'
+  prometheus-node-exporter:
+    nodeSelector: # <- add nodeselector, toleration and spread constraitns
+      billing-team: default
+      type: karpenter
+    tolerations:
+      - key: 'karpenter'
+        operator: 'Exists'
+        effect: 'NoSchedule'
