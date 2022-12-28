@@ -99,7 +99,7 @@ grafana:
 
 # Karpenter Values
 karpenter:
-  enable: false
+  enable: true
   serviceAccountName:
   controllerClusterEndpoint:
   awsDefaultInstanceProfile:
@@ -175,11 +175,11 @@ yunikorn:
 
 # Argo Rollout Values
 argoRollouts:
-  enable: false
+  enable: true
 
 # Argo Rollout Values
 argoWorkflows:
-  enable: false
+  enable: true
 
 # Kube State Metrics Values
 kubeStateMetrics:
@@ -220,7 +220,7 @@ chaosMesh:
 
 # Cilium Mesh Values
 cilium:
-  enable: false
+  enable: true
 
 # Reloader Values
 reloader:
