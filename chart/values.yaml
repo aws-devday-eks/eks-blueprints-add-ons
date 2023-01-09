@@ -175,11 +175,11 @@ yunikorn:
 
 # Argo Rollout Values
 argoRollouts:
-  enable: true
+  enable: false
 
 # Argo Rollout Values
 argoWorkflows:
-  enable: true
+  enable: false
 
 # Kube State Metrics Values
 kubeStateMetrics:
@@ -220,7 +220,7 @@ chaosMesh:
 
 # Cilium Mesh Values
 cilium:
-  enable: false
+  enable: true
 
 # Reloader Values
 reloader:
