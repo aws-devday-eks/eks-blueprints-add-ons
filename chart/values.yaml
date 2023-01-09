@@ -220,7 +220,7 @@ chaosMesh:
 
 # Cilium Mesh Values
 cilium:
-  enable: false
+  enable: true
 
 # Reloader Values
 reloader:
