@@ -23,8 +23,6 @@ spec:
         value: {{ .Values.awsForFluentBit.serviceAccountName }}
       - name: aws-for-fluent-bit.cloudWatch.serviceAccount.name
         value: {{ .Values.awsForFluentBit.serviceAccountName }}
-      - name: aws-for-fluent-bit.cloudWatch
-        value: {{ .Values.awsForFluentBit.cloudWatch }}
       - name: aws-for-fluent-bit.firehose.region
         value: {{ .Values.region }}
       - name: aws-for-fluent-bit.kinesis.region
