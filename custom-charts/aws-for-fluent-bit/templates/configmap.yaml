@@ -110,7 +110,7 @@ data:
         auto_retry_requests   {{ .Values.cloudWatch.autoRetryRequests }}
         {{- end -}}
         {{- if .Values.cloudWatch.externalId }}
-        external_id           {{  Values.cloudWatch.externalId }}
+        external_id           {{  .Values.cloudWatch.externalId }}
         {{- end -}}
         {{- if .Values.cloudWatch.extraOutputs }}
 {{ .Values.cloudWatch.extraOutputs | indent 8 }}
