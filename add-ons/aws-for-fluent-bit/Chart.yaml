@@ -17,4 +17,4 @@ appVersion: "2.0"
 dependencies:
   - name: aws-for-fluent-bit
     version: 0.1.24
-    repository: "file://../../../custom-charts/aws-for-fluent-bit"
+    repository: "file://../../custom-charts/aws-for-fluent-bit"
