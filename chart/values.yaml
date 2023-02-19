@@ -30,9 +30,12 @@ awsEfsCsiDriver:
 # AWS for Fluent Bit Values
 awsForFluentBit:
   enable: false
-  logGroupName: /eks/test-log-group/
   serviceAccountName:
-
+  cloudWatch:
+    logGroupName: /eks/newchart/workload-logs/fallback
+    logStreamPrefix: fallback-
+    logGroupTemplate: /eks/newchart/workload-logs/$kubernetes['namespace_name']
+    logStreamTemplate: $kubernetes['pod_name'].$kubernetes['container_name']
 # AWS Load Balancer Controller Values
 awsLoadBalancerController:
   enable: true
