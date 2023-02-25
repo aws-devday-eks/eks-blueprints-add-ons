@@ -23,13 +23,13 @@ spec:
         value: {{ .Values.region }}
       - name: aws-for-fluent-bit.s3.region
         value: {{ .Values.region }}
-      - name: aws-for-fluent-bit.opensearch.region
+      - name: aws-for-fluent-bit.opensearch.awsRegion
         value: {{ .Values.region }}
       - name: aws-for-fluent-bit.firehose.region
         value: {{ .Values.region }}
       - name: aws-for-fluent-bit.kinesis.region
         value: {{ .Values.region }}
-      - name: aws-for-fluent-bit.elasticsearch.region
+      - name: aws-for-fluent-bit.elasticsearch.awsRegion
         value: {{ .Values.region }}
       - name: aws-for-fluent-bit.serviceAccount.name
         value: {{ .Values.awsForFluentBit.serviceAccountName }}
