@@ -40,6 +40,8 @@ awsForFluentBit:
   s3:
     enable: true
     bucket: fluentbit-logging-bucket
+  kinesis:
+    enable: false
 
 # AWS Load Balancer Controller Values
 awsLoadBalancerController:
