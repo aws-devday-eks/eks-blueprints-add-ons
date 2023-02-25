@@ -202,16 +202,16 @@ opensearch:
   port: "443"
   tls: "on"
   path: ""
-  bufferSize: "4k"
+  bufferSize: "5m"
   pipeline:
   awsRegion: "us-east-1"
-  awsAuth: "on"
+  awsAuth: "On"
   awsStsEndpoint:
   awsRoleArn:
   awsExternalId:
   httpUser:
   httpPasswd:
-  index: "aws-fluent-bit"
+  index: $kubernetes['namespace_name']
   type: "_doc"
   logstashFormat: "off"
   logstashPrefix: "logstash"
@@ -229,7 +229,7 @@ opensearch:
   traceError: "Off"
   currentTimeIndex: "Off"
   logstashPrefixKey:
-  suppressTypeName: "Off"
+  suppressTypeName: "On"
   # extraOutputs: |
 
 # additionalOutputs: |
