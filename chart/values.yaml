@@ -44,6 +44,10 @@ awsForFluentBit:
     enabled: false
   firehose:
     enabled: false
+  opensearch:
+    enabled: true
+    host:
+    tls: on
 
 # AWS Load Balancer Controller Values
 awsLoadBalancerController:
