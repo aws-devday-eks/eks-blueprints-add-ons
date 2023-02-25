@@ -32,9 +32,9 @@ awsForFluentBit:
   enabled: true
   serviceAccountName:
   cloudWatchLogs:
-    enabled: true
+    enabled: false
   s3:
-    enabled: true
+    enabled: false
     bucket: fluentbit-logging-bucket
   kinesis:
     enabled: false
