@@ -46,7 +46,7 @@ awsForFluentBit:
     enabled: false
   opensearch:
     enabled: true
-    host: https://search-fluent-bit-logging-g6lh44s35e7ytj5vh2yrsds7qa.ap-southeast-1.es.amazonaws.com
+    host: search-fluent-bit-logging-g6lh44s35e7ytj5vh2yrsds7qa.ap-southeast-1.es.amazonaws.com
     tls: on
 
 # AWS Load Balancer Controller Values
