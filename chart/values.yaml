@@ -44,7 +44,7 @@ awsForFluentBit:
     enabled: true
     host: search-fluent-bit-logging-g6lh44s35e7ytj5vh2yrsds7qa.ap-southeast-1.es.amazonaws.com
     tls: on
-    index: $kubernetes['namespace_name']
+    index: "$kubernetes['namespace_name']"
   elasticsearch:
     enabled: false
 
