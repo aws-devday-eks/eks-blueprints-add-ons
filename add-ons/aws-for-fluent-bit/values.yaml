@@ -4,8 +4,14 @@ aws-for-fluent-bit:
 
   cloudWatch:
 
+  cloudWatchLogs:
+
   firehose:
 
   kinesis:
 
   elasticsearch:
+
+  s3:
+
+  opensearch:
