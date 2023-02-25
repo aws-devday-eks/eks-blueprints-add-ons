@@ -96,11 +96,11 @@ cloudWatchLogs:
   enabled: true
   match: "*"
   region: "us-east-1"
-  logGroupName: "/aws/eks/fluentbit-cloudwatch_native/logs"
-  logGroupTemplate:
+  logGroupName: "/aws/eks/fluentbit-cloudwatch-native/logs"
+  logGroupTemplate: /aws/eks/fluentbit-cloudwatch-native/workload/$kubernetes['namespace_name']
   logStreamName:
   logStreamPrefix: "fluentbit-"
-  logStreamTemplate:
+  logStreamTemplate: $kubernetes['pod_name'].$kubernetes['container_name']
   logKey:
   logFormat:
   roleArn:
