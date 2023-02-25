@@ -29,19 +29,21 @@ awsEfsCsiDriver:
 
 # AWS for Fluent Bit Values
 awsForFluentBit:
-  enable: true
+  enabled: true
   serviceAccountName:
   cloudWatchLogs:
-    enable: true
+    enabled: true
     logGroupName: /eks/cloudwatch-new-plugin/workload-logs/fallback
     logStreamPrefix: fallback-
     logGroupTemplate: /eks/newchart/workload-logs/$kubernetes['namespace_name']
     logStreamTemplate: $kubernetes['pod_name'].$kubernetes['container_name']
   s3:
-    enable: true
+    enabled: true
     bucket: fluentbit-logging-bucket
   kinesis:
-    enable: false
+    enabled: false
+  firehose:
+    enabled: false
 
 # AWS Load Balancer Controller Values
 awsLoadBalancerController:
