@@ -33,10 +33,6 @@ awsForFluentBit:
   serviceAccountName:
   cloudWatchLogs:
     enabled: true
-    logGroupName: /eks/cloudwatch-new-plugin/workload-logs/fallback
-    logStreamPrefix: fallback-
-    logGroupTemplate: /eks/newchart/workload-logs/$kubernetes['namespace_name']
-    logStreamTemplate: $kubernetes['pod_name'].$kubernetes['container_name']
   s3:
     enabled: true
     bucket: fluentbit-logging-bucket
