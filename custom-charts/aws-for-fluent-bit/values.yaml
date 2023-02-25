@@ -211,10 +211,10 @@ opensearch:
   awsExternalId:
   httpUser:
   httpPasswd:
-  index: "fluent-bit"
+  index: "aws-fluent-bit"
   type: "_doc"
   logstashFormat: "On"
-  logstashPrefix: $kubernetes['namespace_name']
+  logstashPrefix: "logstash"
   logstashDateFormat: "%Y.%m.%d"
   timeKey: "@timestamp"
   timeKeyFormat: "%Y-%m-%dT%H:%M:%S"
