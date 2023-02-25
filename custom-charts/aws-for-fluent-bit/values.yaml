@@ -213,7 +213,7 @@ opensearch:
   httpPasswd:
   index: $kubernetes['namespace_name']
   type: "_doc"
-  logstashFormat: "off"
+  logstashFormat: "On"
   logstashPrefix: "logstash"
   logstashDateFormat: "%Y.%m.%d"
   timeKey: "@timestamp"
