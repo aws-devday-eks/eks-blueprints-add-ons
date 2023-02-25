@@ -196,7 +196,7 @@ s3:
   # extraOutputs: |
 
 opensearch:
-  enabled: true
+  enabled: false
   match: "*"
   host:
   port: "443"
