@@ -32,9 +32,9 @@ awsForFluentBit:
   enabled: true
   serviceAccountName:
   cloudWatchLogs:
-    enabled: false
+    enabled: true
   s3:
-    enabled: false
+    enabled: true
     bucket: fluentbit-logging-bucket
   kinesis:
     enabled: false
@@ -44,7 +44,6 @@ awsForFluentBit:
     enabled: true
     host: search-fluent-bit-logging-g6lh44s35e7ytj5vh2yrsds7qa.ap-southeast-1.es.amazonaws.com
     tls: on
-    index: "$kubernetes['namespace_name']"
   elasticsearch:
     enabled: false
 
