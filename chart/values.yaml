@@ -1,9 +1,9 @@
 # Global Values
-repoUrl: "https://github.com/badal-deep-shared/eks-blueprints-add-ons.git"
+repoUrl: "https://github.com/aws-devday-eks/eks-blueprints-add-ons.git"
 targetRevision: HEAD
 region: "ap-southeast-1"
 account: "535479350247"
-clusterName: "eks-blueprints"
+clusterName: "eks-demo"
 
 # Agones Values
 agones:
