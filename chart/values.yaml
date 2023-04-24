@@ -75,7 +75,7 @@ certManagerCsiDriver:
 
 # Cluster Autoscaler Values
 clusterAutoscaler:
-  enable: false
+  enable: true
   serviceAccountName:
 
 # Datadog Operator
@@ -98,7 +98,7 @@ externalSecrets:
 
 # Gatekeeper Values
 gatekeeper:
-  enable: false
+  enable: true
   clusterName:
 
 # Nginx Values
@@ -148,7 +148,7 @@ ondat:
 
 # Prometheus Values
 prometheus:
-  enable: false
+  enable: true
   ampWorkspaceUrl: "https://aps-workspaces.ap-southeast-1.amazonaws.com/workspaces/ws-a7ed3d1c-107d-4264-bc2c-fc3ca546a1dc/api/v1/remote_write"
   prometheus-node-exporter:
     tolerations:
@@ -169,11 +169,11 @@ sparkOperator:
 
 # Tetrate Istio Values
 tetrateIstio:
-  enable: false
-  base:
+  enable: true
+  base: true
   cni:
-  istiod:
-  global:
+  istiod: true
+  global: true
 
 # Traefik Values
 traefik:
@@ -259,4 +259,4 @@ nvidiaDevicePlugin:
   enable: false
 
 velero:
-  enable: false
+  enable: true
