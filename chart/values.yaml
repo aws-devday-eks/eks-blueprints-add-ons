@@ -259,4 +259,4 @@ nvidiaDevicePlugin:
   enable: false
 
 velero:
-  enable: true
+  enable: false
