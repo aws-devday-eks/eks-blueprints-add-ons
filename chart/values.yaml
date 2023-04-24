@@ -1,9 +1,9 @@
 # Global Values
 repoUrl: "https://github.com/aws-devday-eks/eks-blueprints-add-ons.git"
 targetRevision: HEAD
-region: "ap-southeast-1"
-account: "535479350247"
-clusterName: "eks-demo"
+region: ""
+account: ""
+clusterName: ""
 
 # Agones Values
 agones:
@@ -148,7 +148,7 @@ ondat:
 
 # Prometheus Values
 prometheus:
-  enable: true
+  enable: false
   ampWorkspaceUrl: "https://aps-workspaces.ap-southeast-1.amazonaws.com/workspaces/ws-a7ed3d1c-107d-4264-bc2c-fc3ca546a1dc/api/v1/remote_write"
   prometheus-node-exporter:
     tolerations:
@@ -211,7 +211,7 @@ promtail:
 
 # kubecost Values
 kubecost:
-  enable: true
+  enable: false
   global:
     amp:
       enabled: true
@@ -234,7 +234,7 @@ chaosMesh:
 
 # Cilium Mesh Values
 cilium:
-  enable: true
+  enable: false
 
 # Reloader Values
 reloader:
